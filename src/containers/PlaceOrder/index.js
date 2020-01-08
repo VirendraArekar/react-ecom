@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Header from '../../components/Header/Header';
 import './style.css';
-import NormalInput from '../../components/UI/NormalInput';
+// import NormalInput from '../../components/UI/NormalInput';
 import * as authActions from '../../store/actions/authActions';
 import { connect } from 'react-redux';
 import AddressForm from './AddressForm';
@@ -69,7 +69,7 @@ class PlaceOrder extends Component{
             }
         })
         .then(response => {
-            if(response.status == 200){
+            if(response.status === 200){
                 return response.json();
             }else{
                 throw new Error('Something went wrong');

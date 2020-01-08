@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import './style.css';
 import Header from '../../components/Header/Header';
 import * as authActions from '../../store/actions/authActions';
@@ -83,7 +83,7 @@ class Orders extends Component{
                                 return (
                                     <div key={order._id} className="Order">
                                         <div className="OrderHeader">
-                                            <a href="#">{order._id}</a>
+                                            <a href="http://localhost">{order._id}</a>
                                         </div>
                                         <div className="OrderDescription">
                                             <div className="od1">
@@ -92,11 +92,11 @@ class Orders extends Component{
                                             </div>
                                             <div className="od2">
                                                 <p className="odtitle">Payment Type</p>
-                                                <a className="odp">{order.paymentType}</a>
+                                                <a href="http://localhost" className="odp">{order.paymentType}</a>
                                             </div>
                                             <div className="od3">
                                                 <p className="odtitle">Payment Status</p>
-                                                <a className="odp">{order.paymentStatus}</a>
+                                                <a href="http://localhost" className="odp">{order.paymentStatus}</a>
                                             </div>
                                         
                                         </div>
@@ -104,7 +104,7 @@ class Orders extends Component{
                                             {order.order.map(item => (
                                                 <div key={item._id} style={{display: 'flex', alignItems: 'center', margin: '5px 0', borderBottom: '1px solid #cecece'}}>
                                                     <div style={{width: '80px', height: '80px', overflow: 'hidden', position: 'relative'}} className="ImageContainer">
-                                                        <img style={{maxWidth: '100%', maxHeight: '100%', position: 'absolute', left: '50%', transform: 'translateX(-50%)'}} src={item.product.productPic[0].img}/>
+                                                        <img style={{maxWidth: '100%', maxHeight: '100%', position: 'absolute', left: '50%', transform: 'translateX(-50%)'}} src={item.product.productPic[0].img} alt="order picse"/>
                                                     </div>
                                                     <div>
                                                         <p className="odtitle">{item.product.name}</p>

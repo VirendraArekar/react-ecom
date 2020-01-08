@@ -24,7 +24,7 @@ const CartItem = props => {
                     increaseQuantity={props.increaseQuantity}
                     decreaseQuantity={props.decreaseQuantity}
                 />
-                <a href="#">REMOVE</a>
+                <a href="http://localhost">REMOVE</a>
             </div>
         </div>
     )

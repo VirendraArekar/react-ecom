@@ -87,7 +87,8 @@ const cartReducers = (state = initState, actions) => {
                 cartItem: [],
                 totalAmount: 0,
                 cartCount: 0
-            }
+            };
+            break;
         default:
             break;
     }

@@ -3,7 +3,7 @@ import './style.css';
 import Products from './Products/Products';
 import { Route, Switch } from 'react-router-dom';
 import Header from '../Header/Header';
-import * as authAtions from '../../store/actions/authActions';
+// import * as authAtions from '../../store/actions/authActions';
 import { connect } from "react-redux";
 
 

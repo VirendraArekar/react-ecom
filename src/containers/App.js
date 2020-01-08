@@ -13,7 +13,7 @@ import thunk from 'redux-thunk';
 import authReducers from '../store/reducers/authReducers';
 import productReducers from '../store/reducers/productReducers';
 import ProductDetails from './ProductDetails';
-import Home from './Home';
+// import Home from './Home';
 import Cart from './Cart';
 import cartReducers from '../store/reducers/cartReducers';
 import PlaceOrder from './PlaceOrder';
