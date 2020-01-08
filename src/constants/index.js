@@ -1,1 +1,1 @@
-export const base_url = 'http://localhost:2019';
+export const base_url = 'https://web-storedb.herokuapp.com';
